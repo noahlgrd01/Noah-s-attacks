@@ -9,4 +9,10 @@ Les fichiers et répertoires cibles sont
 - nano /etc/resolv.conf
 - nano /etc/crontab
 
-# Description de l'attaque #
+# Clé USB #
+Clé USB (Digispark (Attiny85), Teensy (Teensy 2.0 ou 3.2), Pro Micro (basé sur ATmega32u4), BadUSB (basé sur une clé USB avec firmware modifiable)).
+
+Le périphérique devra être nommé 'usb-rd'
+
+Le fichier `payload.txt` doit être compilé pour être compris par le RD.
+`java -jar DuckEncoder.jar -i payload.txt -o inject.bin`

